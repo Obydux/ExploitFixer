@@ -1,0 +1,27 @@
+# Korean
+commands:
+  reload: "&aExploitFixer 플러그인이 리로드되었습니다!"
+  help: |-
+    &aExploitFixer &b%version%&a by &bLinsaFTW&a.
+    &e /%command% help &7> &b사용 가능 명령어를 표시합니다.
+    &e /%command% reload &7> &b플러그인을 다시 로드합니다.
+    &e /%command% notifications &7> &b플러그인 알람을 토글합니다.
+    &e /%command% stats &7> &b플레이어 작동 현황을 확인합니다.
+  error:
+    unknown: "&c알 수 없는 명령어입니다. /exploitfixer help 명령어를 통해 사용 가능한 명령어를 확인하세요!"
+    permission: "&c당신은 이 명령어를 사용할 권한이 모자랍니다!"
+    console: "&c이 명령어는 콘솔에서 입력할 수 없습니다!"
+  notifications:
+    enable: "&a알람을 활성화 하였습니다!"
+    disable: "&c알람을 비활성화 하였습니다!"
+  stats: "&c&lEF: &e플레이어 캐시: &a%players_cached%&e 제재된 플레이어: &a%players_punished%"
+modules:
+  custompayload:
+    kick_message: "&c당신은 이 서버에서 일시적으로 차단되었습니다!\n\n&7사유: &f너무 많은 CustomPayload 패킷이 감지됨.\n&7Discord: &b&n%web%&r"
+  commands:
+    kick_message: "&c당신은 이 서버에서 일시적으로 차단되었습니다!\n\n&7사유: &f명령어 취약점 감지.\n&7Discord: &b&n%web%&r"
+  packets:
+    kick_message: "&c당신은 이 서버에서 일시적으로 차단되었습니다!\n\n&7사유: &f패킷 취약점 감지.\n&7Discord: &b&n%web%&r"
+  nulladdress:
+    kick_message: "&c당신은 이 서버에서 일시적으로 차단되었습니다!\n\n&7사유: &fNull address 감지.\n&7Discord: &b&n%web%&r"
+mojang_down: "&cMojang 서버에 문제가 생겼습니다, 나중에 다시 와주세요!\n\n&7사유: &fExploitFixer UUID를 찾을 수 없었습니다.\n&7Discord: &b&n%web%&r"
