@@ -1,0 +1,27 @@
+# Romanian Language by DoubleNico
+commands:
+  reload: "&aPluginul ExploitFixer a fost reîncărcat!"
+  help: |-
+    &aExploitFixer &b%version%&a creat de &bLinsaFTW&a.
+    &e /%command% help &7> &bAfișează comenzile disponibile.
+    &e /%command% reload &7> &bReîncărcați pluginul.
+    &e /%command% notifications &7> &bComută notificările despre plugin.
+    &e /%command% stats &7> &bUrmăriți statisticile pluginului.
+  error:
+    unknown: "&cComanda necunoscută. Utilizați /exploitfixer help pentru a vedea comenzile disponibile!"
+    permission: "&cNu aveți permisiunea de a utiliza această comandă!"
+    console: "&cAceastă comandă nu poate fi executată din consola!"
+  notifications:
+    enable: "&aAți activat notificările!"
+    disable: "&cAveți notificările dezactivate!"
+  stats: "&c&lEF: &eJucători cached: &a%players_cached%&e Jucători pedepsiti: &a%players_punished%"
+modules:
+  custompayload:
+    kick_message: "&cSunteți blocat temporar de pe acest server!\n\n&7Motiv: &fPrea multe pachete de tip CustomPayload.\n&7Discord: &b&n%web%&r"
+  commands:
+    kick_message: "&cSunteți blocat temporar de pe acest server!\n\n&7Motiv: &fFolosirea Comenzilor Exploatabile.\n&7Discord: &b&n%web%&r"
+  packets:
+    kick_message: "&cSunteți blocat temporar de pe acest server!\n\n&7Motiv: &fExploatarea pachetelor.\n&7Discord: &b&n%web%&r"
+  nulladdress:
+    kick_message: "&cSunteți blocat temporar de pe acest server!\n\n&7Motiv: &fAdresa null.\n&7Discord: &b&n%web%&r"
+mojang_down: "&cServerele Mojang sunt offline, vă rugăm să reveniți mai târziu!\n\n&7Motiv: &fNu putem detecta adresa UUID.\n&7Discord: &b&n%web%&r"
