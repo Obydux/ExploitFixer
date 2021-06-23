@@ -1,0 +1,27 @@
+# Chinese Traditional - Credits: Flandre_tw
+commands:
+  reload: "&aExploitFixer 已經成功載入 ！"
+  help: |-
+    &aExploitFixer 指令 ：
+    &e /%command% help &7> &b顯示說明指令。
+    &e /%command% reload &7> &b重新載入插件。
+    &e /%command% notifications &7> &b開關插件提醒通知。
+    &e /%command% stats &7> &b查看插件統計資料。
+  error:
+    unknown: "&c未知的指令。請使用 /exploitfixer help 查看指令說明 ！"
+    permission: "&c你沒有使用該指令的權限 ！"
+    console: "&c該指令無法在控制台執行 ！"
+  notifications:
+    enable: "&a你已開啟提醒通知 ！"
+    disable: "&c你已關閉提醒通知 ！"
+  stats: "&c&lEF ： &e已快取的玩家 ： &a%players_cached% &e已被懲罰的玩家 ： &a%players_punished%"
+modules:
+  custompayload:
+    kick_message: "&c你暫時被伺服器踢出 ！ \n\n&7原因 ： &f檢測到過多的 CustomPayload 封包。\n&7Discord ： &b&n%web%&r"
+  commands:
+    kick_message: "&c你暫時被伺服器踢出 ！ \n\n&7原因 ： &f檢測到濫用指令。\n&7Discord ： &b&n%web%&r"
+  packets:
+    kick_message: "&c你暫時被伺服器踢出 ！ \n\n&7原因 ： &f檢測到封包異常。\n&7Discord ： &b&n%web%&r"
+  nulladdress:
+    kick_message: "&c你暫時被伺服器踢出 ！ \n\n&7原因 ： &f檢測到空的位址。\n&7Discord ： &b&n%web%&r"
+mojang_down: "&cMojang 伺服器離線，請稍後再查看 ！ \n\n&7原因 ： &fExploitFixer 無法檢查 UUID。\n&7Discord ： &b&n%web%&r"
