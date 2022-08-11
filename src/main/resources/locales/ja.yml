@@ -1,0 +1,27 @@
+# Japanese - Credits: cosmos223
+commands:
+  reload: "&aプラグイン ExploitFixer をリロードしました。"
+  help: |-
+    &aExploitFixer &b%version%&a by &bLinsaFTW
+    &e /%command% help &7> &b使用可能なコマンドを表示します。
+    &e /%command% reload &7> &bプラグインをリロードします。
+    &e /%command% notifications &7> &bプラグインの通知を切り替えます。
+    &e /%command% stats &7> &bプラグインの統計情報を表示します。
+  error:
+    unknown: "&c不明なコマンドです。 /exploitfixer help と入力して使用可能なコマンドを確認してください。"
+    permission: "&c権限がありません。"
+    console: "&cこのコマンドはコンソールから実行できません。"
+  notifications:
+    enable: "&a通知を有効にしました。"
+    disable: "&c通知を無効にしました。"
+  stats: "&c&lEF: &eキャッシュされたプレイヤー: &a%players_cached%&e 罰せられたプレイヤー: &a%players_punished%"
+modules:
+  custompayload:
+    kick_message: "&cあなたはこのサーバーから一時的にブロックされています。\n\n&7理由: &fCustomPayloadパケットが多く検出されました。\n&7Discord: &b&n%web%&r"
+  commands:
+    kick_message: "&cあなたはこのサーバーから一時的にブロックされています。\n\n&7理由: &fコマンドの脆弱性を使用したことを検出しました。\n&7Discord: &b&n%web%&r"
+  packets:
+    kick_message: "&cあなたはこのサーバーから一時的にブロックされています。\n\n&7理由: &fパケットの脆弱性を使用したことを検出しました。\n&7Discord: &b&n%web%&r"
+  nulladdress:
+    kick_message: "&cあなたはこのサーバーから一時的にブロックされています。\n\n&7理由: &fNullアドレスが検出されました。\n&7Discord: &b&n%web%&r"
+mojang_down: "&cMojangのサーバーが応答していません。時間を置いてから再度接続してください。\n\n&7理由: &fExploitFixer は UUID を確認できませんでした。\n&7Discord: &b&n%web%&r"

@@ -1,0 +1,27 @@
+# Polish - Credits: Rollczi
+commands:
+  reload: "&aExploitFixer został przeładowany!"
+  help: |-
+    &aExploitFixer &b%version%&a stworzony przez &bLinsaFTW&a.
+    &e /%command% help &7> &bLista dostępnych komend.
+    &e /%command% reload &7> &bPrzeładowanie konfiguracji pluginu.
+    &e /%command% notifications &7> &bWłącza i wyłącza powiadomienia pluginu.
+    &e /%command% stats &7> &bStatystyki pluginu.
+  error:
+    unknown: "&cNieznana komenda. Użyj /exploitfixer help, aby zobaczyć listę komend!"
+    permission: "&cNie masz permisji do tej komendy!"
+    console: "&cTego polecenia nie można wykonać z poziomu konsoli!"
+  notifications:
+    enable: "&aWłączono powiadomienia!"
+    disable: "&cWyłączono powiadomienia!"
+  stats: "&c&lEF: &eGracze w pamięci podręcznej: &a%players_cached%&e Ukarani gracze : &a%players_punished%"
+modules:
+  custompayload:
+    kick_message: "&cZostałeś tymczasowo zablokowany na tym serwerze!\n\n&7Powód: &fWykryto zbyt wiele pakietów CustomPayload.\n&7Discord: &b&n%web%&r"
+  commands:
+    kick_message: "&cZostałeś tymczasowo zablokowany na tym serwerze!\n\n&7Powód: &fWykryto exploit poleceń.\n&7Discord: &b&n%web%&r"
+  packets:
+    kick_message: "&cZostałeś tymczasowo zablokowany na tym serwerze!\n\n&7Powód: &fWykryto exploity dla pakietów.\n&7Discord: &b&n%web%&r"
+  nulladdress:
+    kick_message: "&cZostałeś tymczasowo zablokowany na tym serwerze!\n\n&7Powód: &fWykryto \"null address\".\n&7Discord: &b&n%web%&r"
+mojang_down: "&cSerwery Mojang przestały działać! Spróbuj wejść na serwer później!\n\n&7Powód: &fExploitFixer nie może sprawdzić UUID.\n&7Discord: &b&n%web%&r"

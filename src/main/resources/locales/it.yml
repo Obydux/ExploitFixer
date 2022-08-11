@@ -1,0 +1,27 @@
+# Italian
+commands:
+  reload: "&aPlugin ExploitFixer ricaricato!"
+  help: |-
+    &aExploitFixer &b%version%&a da parte di &bLinsaFTW&a.
+    &e /%command% help &7> &bMostra i commandi disponibili.
+    &e /%command% reload &7> &bRicarica il plugin.
+    &e /%command% notifications &7> &bCambia le notifiche del plugin.
+    &e /%command% stats &7> &bMostra le statistiche del plugin.
+  error:
+    unknown: "&cCommando sconosciuto. Usa /exploitfixer help per vedere i commandi disponibili!"
+    permission: "&cNon hai il permesso per questo commando!"
+    console: "&cQuesto commando non può essere eseguito dalla console!"
+  notifications:
+    enable: "&aHai abilitato le notifiche!"
+    disable: "&cHai disabilitato le notifiche!"
+  stats: "&c&lEF: &eGiocatori in cache: &a%players_cached%&e Giocatori puniti: &a%players_punished%"
+modules:
+  custompayload:
+    kick_message: "&cSei stato temporaneamente bloccato da questo server!\n\n&7Motivo: &fTroppi pacchetti CustomPayload.\n&7Discord: &b&n%web%&r"
+  commands:
+    kick_message: "&cSei stato temporaneamente bloccato da questo server!\n\n&7Motivo: &fExploit di commandi rilevati.\n&7Discord: &b&n%web%&r"
+  packets:
+    kick_message: "&cSei stato temporaneamente bloccato da questo server!\n\n&7Motivo: &fExploit di pacchetti rilevati.\n&7Discord: &b&n%web%&r"
+  nulladdress:
+    kick_message: "&cSei stato temporaneamente bloccato da questo server!\n\n&7Motivo: &fIndirizzo null rilevato.\n&7Discord: &b&n%web%&r"
+mojang_down: "&cMojang è disattivato, torna presto!\n\n&7Reason: &fExploitFixer non può confermare l'UUID. \n&7Discord: &b&n%web%&r"

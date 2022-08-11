@@ -1,0 +1,27 @@
+# German - Credits: Dominik48N / NoJokeFNA / GeGrieftGames
+commands:
+  reload: "&aPlugin ExploitFixer wurde neu geladen!"
+  help: |-
+    &aExploitFixer &b%version%&a von &bLinsaFTW&a.
+    &e /%command% help &7> &bZeigt alle verfügbaren Befehle an.
+    &e /%command% reload &7> &bLädt das Plugin neu.
+    &e /%command% notifications &7> &bSchaltet Benachrichtigungen des Plugins um.
+    &e /%command% stats &7> &bZeigt die Statistiken des Plugins an.
+  error:
+    unknown: "&cUnbekannter Befehl. Nutze /exploitfixer help um die verfügbaren Befehle aufzulisten!"
+    permission: "&cDu darfst diesen Befehl nicht ausführen!"
+    console: "&cDieser Befehl darf nicht von der Konsole ausgeführt werden!"
+  notifications:
+    enable: "&aDu hast die Benachrichtigungen aktiviert!"
+    disable: "&cDu hast die Benachrichtigungen deaktiviert!"
+  stats: "&c&lEF: &eZwischengespeicherte Spieler: &a%players_cached%&e Bestrafte Spieler: &a%players_punished%"
+modules:
+  custompayload:
+    kick_message: "&cDu bist temporär vom Server gesperrt!\n\n&7Grund: &fZu viele CustomPayload Packete wurden erkannt.\n&7Discord: &b&n%web%&r"
+  commands:
+    kick_message: "&cDu bist temporär vom Server gesperrt!\n\n&7Grund: &fBefehl Exploit erkannt.\n&7Discord: &b&n%web%&r"
+  packets:
+    kick_message: "&cDu bist temporär vom Server gesperrt!\n\n&7Grund: &fPacket Exploit erkannt.\n&7Discord: &b&n%web%&r"
+  nulladdress:
+    kick_message: "&cDu bist temporär vom Server gesperrt!\n\n&7Grund: &fNulladresse erkannt.\n&7Discord: &b&n%web%&r"
+mojang_down: "&cDie Mojang Server sind nicht verfügbar, versuche es später erneut!\n\n&7Grund: &fExploitFixer kann die UUID nicht überprüfen.\n&7Discord: &b&n%web%&r"

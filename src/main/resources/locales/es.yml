@@ -1,0 +1,27 @@
+# Spanish - Credits: LinsaFTW
+commands:
+  reload: "&aPlugin ExploitFixer recargado!"
+  help: |-
+    &aExploitFixer &b%version%&a por &bLinsaFTW&a.
+    &e /%command% help &7> &bMuestra los comandos disponibles.
+    &e /%command% reload &7> &bRecarga el plugin.
+    &e /%command% notifications &7> &bAlterna las notificaciones del plugin.
+    &e /%command% stats &7> &bMira las estadisticas del plugin.
+  error:
+    unknown: "&cComando desconocido. Usa /exploitfixer help para ver comandos disponibles!"
+    permission: "&cNo tienes permiso para usar ese comando!"
+    console: "&cEste comando no puede ser usado desde la consola!"
+  notifications:
+    enable: "&aHabilitaste las notificaciones!"
+    disable: "&cDeshabilitaste las notificaciones!"
+  stats: "&c&lEF: &eJugadores en cache: &a%players_cached%&e Jugadores sancionados: &a%players_punished%"
+modules:
+  custompayload:
+    kick_message: "&cFuiste bloqueado temporalmente!\n\n&7Razon: &fExploit de CustomPayload detectado.\n&7Discord: &b&n%web%&r"
+  commands:
+    kick_message: "&cFuiste bloqueado temporalmente!\n\n&7Razon: &fExploit de Comandos detectado.\n&7Discord: &b&n%web%&r"
+  packets:
+    kick_message: "&cFuiste bloqueado temporalmente!\n\n&7Razon: &fExploit de Packets detectado.\n&7Discord: &b&n%web%&r"
+  nulladdress:
+    kick_message: "&cFuiste bloqueado temporalmente!\n\n&7Razon: &fExploit de Red nula detectado.\n&7Discord: &b&n%web%&r"
+mojang_down: "&cMojang esta apagado, vuelve pronto!\n\n&7Razon: &fExploitFixer no puede confirmar la UUID.\n&7Discord: &b&n%web%&r"
