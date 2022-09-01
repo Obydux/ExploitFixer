@@ -1,0 +1,27 @@
+# Russian - Credits: GreenLink
+commands:
+  reload: "&aПлагин ExploitFixer перезагружен!"
+  help: |-
+    &aExploitFixer &b%version%&a автор &bLinsaFTW&a.
+    &e /%command% help &7> &bПоказывает доступные команды.
+    &e /%command% reload &7> &bПерезагружает плагин.
+    &e /%command% notifications &7> &bВключает/Отключает уведомления плагина.
+    &e /%command% stats &7> &bПросмотр статистики плагина.
+  error:
+    unknown: "&cНеизвестная команда. Воспользуйтесь /exploitfixer help чтобы просмотреть доступные команды!"
+    permission: "&cУ вас нет разрешения на использование этой команды!"
+    console: "&cЭта команда не может быть выполнена из консоли!"
+  notifications:
+    enable: "&aВы включили уведомления!"
+    disable: "&cВы отключили уведомления!"
+  stats: "&c&lEF: &Сохранённых игроков: &a%players_cached%&e Наказанных игроков: &a%players_punished%"
+modules:
+  custompayload:
+    kick_message: "&cВы временно заблокированы на этом сервере!\n\n&7Причина: &fОбнаружено слишком много пользовательских пакетов.\n&7Discord: &b&n%web%&r"
+  commands:
+    kick_message: "&cВы временно заблокированы на этом сервере!\n\n&7Причина: &fОбнаружена уязвимость команды.\n&7Discord: &b&n%web%&r"
+  packets:
+    kick_message: "&cВы временно заблокированы на этом сервере!\n\n&7Причина: &fОбнаружена уязвимость пакетов.\n&7Discord: &b&n%web%&r"
+  nulladdress:
+    kick_message: "&cВы временно заблокированы на этом сервере!\n\n&7Причина: &fОбнаружен пустой адрес.\n&7Discord: &b&n%web%&r"
+mojang_down: "&cСервера Mojang не работают, пожалуйста, возвращайтесь позже!\n\n&7Причина: &fExploitFixer не может проверить UUID.\n&7Discord: &b&n%web%&r"
