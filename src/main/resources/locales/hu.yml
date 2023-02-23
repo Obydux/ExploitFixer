@@ -1,0 +1,26 @@
+#Hungarian
+commands:
+  reload: "&aAz ExploitFixer sikeresen újraindult!"
+  help: |-
+    &aExploitFixer &b%version%&a by &bLinsaFTW&a.
+    &e /%command% help &7> &bElérhető parancsok.
+    &e /%command% reload &7> &bPlugin újraindítása.
+    &e /%command% notifications &7> &bÉrtesítések ki/be kapcsolása.
+    &e /%command% stats &7> &bA plugin statisztikáinak megtekintése.
+  error:
+    unknown: "&cIsmeretlen parancs. Használd a /exploitfixer help parancsot!"
+    permission: "&cNincs jogod a parancs használatához!"
+    console: "&cEzt a parancsot nem bírod használni a konzolból!"
+  notifications:
+    enable: "&aBekapcsoltad az értesítéseket!"
+    disable: "&cKikapcsoltad az értesítéseket!"
+  stats: "&c&lEF: &eJátékosok: &a%players_cached%&e Büntetések: &a%players_punished%"
+modules:
+  custompayload:
+    kick_message: "&cKi lettél rúgva a szerverről!\n\n&7Reason: &fTúl sok CustomPayload csomagot észleltünk.\n&7Discord: &b&n%discord%&r"
+  commands:
+    kick_message: "&cKi lettél rúgva a szerverről!\n\n&7Reason: &fParancs exploitot észleltünk.\n&7Discord: &b&n%discord%&r"
+  packets:
+    kick_message: "&cKi lettél rúgva a szerverről!\n\n&7Reason: &fCsomag exploitot észleltünk.\n&7Discord: &b&n%discord%&r"
+  nulladdress:
+    kick_message: "&cKi lettél rúgva a szerverről!\n\n&7Reason: &fNull addresst észleltünk.\n&7Discord: &b&n%discord%&r"

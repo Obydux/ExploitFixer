@@ -1,0 +1,27 @@
+# French - Credits: HaVroz
+commands:
+  reload: "&aPlugin Exploitfixer rechargé!"
+  help: |-
+    &aExploitFixer &b%version%&a par &bLinsaFTW&a.
+    &e /%command% help &7> &bAfficher les commandes disponibles.
+    &e /%command% reload &7> &bRecharger le plugin.
+    &e /%command% notifications &7> &bActiver/Désactiver les notifications du plugin.
+    &e /%command% stats &7> &bVoir les statistiques du plugin.
+  error:
+    unknown: "&cCommande inconnue. Utilisez /exploitfixer help pour voir les commandes disponibles!"
+    permission: "&cVous n’avez pas la permission d’utiliser cette commande!"
+    console: "&cCette commande ne peut pas être exécutée depuis la console!"
+  notifications:
+    enable: "&aVous avez activé les notifications!"
+    disable: "&cVous avez désactivé les notifications!"
+  stats: "&c&lEF: &eJoueurs caché: &a%players_cached%&e Joueurs sanctionné: &a%players_punished%"
+modules:
+  custompayload:
+    kick_message: "&cVous êtes temporairement bloqué du serveur!\n\n&7Raison: &fTrop de paquets Custompayload détectés.\n&7Discord: &b&n%web%&r"
+  commands:
+    kick_message: "&cVous êtes temporairement bloqué du serveur!\n\n&7Raison: &fExploit de commande détecté.\n&7Discord: &b&n%web%&r"
+  packets:
+    kick_message: "&cVous êtes temporairement bloqué du serveur!\n\n&7Raison: &fExploit de Packets détecté.\n&7Discord: &b&n%web%&r"
+  nulladdress:
+    kick_message: "&cVous êtes temporairement bloqué du serveur!\n\n&7Raison: &fAdresse nulle détectée.\n&7Discord: &b&n%web%&r"
+mojang_down: "&cMojang est désactivé, revenez bientôt!\n\n&7Raison: &fExploitFixer ne peut pas confirmer l'UUID.\n&7Discord: &b&n%web%&r"

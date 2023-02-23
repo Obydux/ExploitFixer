@@ -1,0 +1,27 @@
+# Hebrew - Credits: ItzGuy
+commands:
+  reload: "&aהפלאגין תיקון פרצות רוענן!"
+  help: |-
+    &aExploitFixer &b%version%&a by &bLinsaFTW&a.
+    &e /%command% help &7> &b.פקודות זמינות
+    &e /%command% reload &7> &b.ריענון הפלאגין
+    &e /%command% notifications &7> &bשינוי התראות הפלאגין.
+    &e /%command% stats &7> &bסטטיסטיקות של הפלאגין.
+  error:
+    unknown: "&cפקודה לא ידועה! השתמש ב - /exploitfixer help"
+    permission: "&cאין לך גישה להשתמש בפקודה זאת!"
+    console: "&cהפקודה הזאת לא יכולה לרוץ בקונסול!"
+  notifications:
+    enable: "&aהדלקת התראות!"
+    disable: "&cכיבית התראות!"
+  stats: "&c&lEF: &eשחקנים שמורים: &a%players_cached%&e שחקנים שהוענשו: &a%players_punished%"
+modules:
+  custompayload:
+    kick_message: "&cאתה חסום זמנית מהשרת הזה!\n\n&7Reason: &fToo many CustomPayload packets detected.\n&7Discord: &b&n%web%&r"
+  commands:
+    kick_message: "&cאתה חסום זמנית מהשרת הזה!\n\n&7Reason: &fCommand exploit detected.\n&7Discord: &b&n%web%&r"
+  packets:
+    kick_message: "&cאתה חסום זמנית מהשרת הזה!\n\n&7Reason: &fPackets exploit detected.\n&7Discord: &b&n%web%&r"
+  nulladdress:
+    kick_message: "&cאתה חסום זמנית מהשרת הזה!\n\n&7Reason: &fNull address detected.\n&7Discord: &b&n%web%&r"
+mojang_down: "&cשרתי האימות של מוג'אנג לא פועלים, תחזרו מאוחר יותר!\n\n&7Reason: &fExploitFixer can't check the UUID.\n&7Discord: &b&n%web%&r"

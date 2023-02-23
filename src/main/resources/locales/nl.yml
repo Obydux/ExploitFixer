@@ -1,0 +1,27 @@
+# Dutch - Credits: SBDeveloper
+commands:
+  reload: "&aPlugin ExploitFixer herladen!"
+  help: |-
+    &aExploitFixer &b%version%&a door &bLinsaFTW&a.
+    &e /%command% help &7> &bLaat de beschikbare commando's zien.
+    &e /%command% reload &7> &bHerlaad de plugin.
+    &e /%command% notifications &7> &bToggled notificaties van de plugin.
+    &e /%command% stats &7> &bLaat de statistieken zien van de plugin.
+  error:
+    unknown: "&cOnbekend commando. Gebruik /exploitfixer help om de beschikbare commando's te zien!"
+    permission: "&cJe hebt niet de benodigde permissie om dit commando te gebruiken!"
+    console: "&cJe kunt dit commando niet vanaf console uitvoeren!"
+  notifications:
+    enable: "&aJe hebt notificaties ingeschakeld!"
+    disable: "&cJe hebt notificaties uitgeschakeld!"
+  stats: "&c&lEF: &eSpelers gecached: &a%players_cached%&e Spelers gestraft: &a%players_punished%"
+modules:
+  custompayload:
+    kick_message: "&cJe bent tijdelijk geblokkeerd van deze server!\n\n&7Reden &fTe veel CustomPayload packets gedetecteerd.\n&7Discord: &b&n%web%&r"
+  commands:
+    kick_message: "&cJe bent tijdelijk geblokkeerd van deze server!\n\n&7Reden: &fCommando exploit gedetecteerd.\n&7Discord: &b&n%web%&r"
+  packets:
+    kick_message: "&cJe bent tijdelijk geblokkeerd van deze server!\n\n&7Reden: &fPackets exploit gedetecteerd.\n&7Discord: &b&n%web%&r"
+  nulladdress:
+    kick_message: "&cJe bent tijdelijk geblokkeerd van deze server!\n\n&7Reden: &fOnbekend adres gedetecteerd.\n&7Discord: &b&n%web%&r"
+mojang_down: "&cMojang servers zijn offline, kom later terug!\n\n&7Reden: &fExploitFixer kan het UUID niet detecteren.\n&7Discord: &b&n%web%&r"

@@ -1,0 +1,27 @@
+# English - Credits: LinsaFTW
+commands:
+  reload: "&aPlugin ExploitFixer reloaded!"
+  help: |-
+    &aExploitFixer &b%version%&a by &bLinsaFTW&a.
+    &e /%command% help &7> &bShows available commands.
+    &e /%command% reload &7> &bReloads the plugin.
+    &e /%command% notifications &7> &bToggles notifications of the plugin.
+    &e /%command% stats &7> &bWatch the stats of the plugin.
+  error:
+    unknown: "&cUnknown command. Use /exploitfixer help to see available commands!"
+    permission: "&cYou dont have permission to use this command!"
+    console: "&cThis command cant be executed from the console!"
+  notifications:
+    enable: "&aYou have enabled notifications!"
+    disable: "&cYou have disabled notifications!"
+  stats: "&c&lEF: &ePlayers cached: &a%players_cached%&e Players punished: &a%players_punished%"
+modules:
+  custompayload:
+    kick_message: "&cYou are temporally blocked from this server!\n\n&7Reason: &fToo many CustomPayload packets detected.\n&7Discord: &b&n%web%&r"
+  commands:
+    kick_message: "&cYou are temporally blocked from this server!\n\n&7Reason: &fCommand exploit detected.\n&7Discord: &b&n%web%&r"
+  packets:
+    kick_message: "&cYou are temporally blocked from this server!\n\n&7Reason: &fPackets exploit detected.\n&7Discord: &b&n%web%&r"
+  nulladdress:
+    kick_message: "&cYou are temporally blocked from this server!\n\n&7Reason: &fNull address detected.\n&7Discord: &b&n%web%&r"
+mojang_down: "&cMojang servers are down, please come back later!\n\n&7Reason: &fExploitFixer can't check the UUID.\n&7Discord: &b&n%web%&r"

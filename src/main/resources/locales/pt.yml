@@ -1,0 +1,27 @@
+# Portuguese - Credits: LucaAzalim
+commands:
+  reload: "&aPlugin ExploitFixer recarregado!"
+  help: |-
+    &aExploitFixer &b%version%&a por &bLinsaFTW&a.
+    &e /%command% help &7> &bComandos disponiveis.
+    &e /%command% reload &7> &bRecarrega o plugin.
+    &e /%command% notifications &7> &bAtiva as notificações do plugin.
+    &e /%command% stats &7> &bVer as estatísticas do plugin.
+  error:
+    unknown: "&cComando desconhecido. Use /exploitfixer para ver os comandos disponiveis!"
+    permission: "&cSem permissão para usar esse comando!"
+    console: "&cEsse comando não pode ser executado pelo console!"
+  notifications:
+    enable: "&cVocê ativou as notificações!"
+    disable: "&cVocê desativou as notificações!"
+  stats: "&c&lEF: &eJogadores em cache: &a%players_cached%&e Jogadores punidos: &a%players_punished%"
+modules:
+  custompayload:
+    kick_message: "&cVocê está temporariamente bloqueado!\n\n&7Motivo: &fExploit de CustomPayload detectado.\n&7Discord: &b&n%web%&r"
+  commands:
+    kick_message: "&cVocê está temporariamente bloqueado!\n\n&7Motivo: &fExploit de comandos detectado.\n&7Discord: &b&n%web%&r"
+  packets:
+    kick_message: "&cVocê está temporariamente bloqueado!\n\n&7Motivo: &fExploit de packets detectado.\n&7Discord: &b&n%web%&r"
+  nulladdress:
+    kick_message: "&cVocê foi temporariamente bloqueado!\n\n&7Motivo: &fExploit de endereço nulo detectado.\n&7Discord: &b&n%web%&r"
+mojang_down: "&cOs servidores da Mojang estão indisponíveis. Tente novamente mais tarde.\n\n&7Motivo: &fExploitFixer não pôde confirmar UUID.\n&7Discord: &b&n%web%&r"

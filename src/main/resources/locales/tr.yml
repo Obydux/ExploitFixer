@@ -1,0 +1,27 @@
+# Turkish
+commands:
+  reload: "&aPlugin ExploitFixer yeniden yüklendi!"
+  help: |-
+    &aExploitFixer &b%version% &ayazan &bLinsaFTW&a.
+    &e /%command% help &7> &bMevcut komutları gösterir.
+    &e /%command% reload &7> &bEklentiyi yükler.
+    &e /%command% notifications &7> &bEklentinin bildirimlerini değiştirir.
+    &e /%command% stats &7> &bEklentinin istatistiklerini izleyin.
+  error:
+    unknown: "&cBilinmeyen komut. Kullanılabilir komutları görmek için / exploitfixer yardımını kullanın!"
+    permission: "&cBu komutu kullanma izniniz yok!"
+    console: "&cBu komut konsoldan yürütülemez!"
+  notifications:
+    enable: "&aBildirimleri etkinleştirdiniz!"
+    disable: "&cBildirimleri devre dışı bıraktınız!"
+  stats: "&c&lEF: &ePlayers önbelleğe alındı: &a%players_cached%&e Players cezalandırıldı: &a%players_punished%"
+modules:
+  custompayload:
+    kick_message: "&cBu sunucudan geçici olarak engellendiniz!\n\n&7Reason: &fBirçok CustomPayload paketi algılandı.\n&7Discord: &b&n%web%&r"
+  commands:
+    kick_message: "&cBu sunucudan geçici olarak engellendiniz!\n\n&7Reason: &fKomuttan yararlanma algılandı.\n&7Discord: &b&n%web%&r"
+  packets:
+    kick_message: "&cBu sunucudan geçici olarak engellendiniz!\n\n&7Reason: &fPackets istismar tespit edildi.\n&7Discord: &b&n%web%&r"
+  nulladdress:
+    kick_message: "&cBu sunucudan geçici olarak engellendiniz!\n\n&7Reason: &fNull adres algılandı.\n&7Discord: &b&n%web%&r"
+mojang_down: "&cMojang kapalı, kısa süre sonra tekrar gelin!\n\n&7Neden: &fExploitFixer UUID'yi doğrulayamıyor.\n&7Discord: &b&n%web%&r"
